@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Nico Moji";
+  src: url("../fonts/NicoMoji-Regular.ttf");
+}
+header {
+  position: relative;
+  background-color: #bf6068;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+  height: 60px;
+  font-family: "Nico Moji", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.pelota {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/pelota.svg");
+  background-size: cover;
+  border-radius: 50%;
+  top: 100px;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  animation: moverPelotaY 15s;
+  animation-iteration-count: 2;
+}
+
+@keyframes moverPelotaY {
+  0% {
+    top: 100px;
+    left: 90%;
+  }
+  10% {
+    top: 12%;
+    left: 60%;
+  }
+  20% {
+    top: 85%;
+    left: 40%;
+  }
+  30% {
+    top: 12%;
+    left: 30%;
+  }
+  40% {
+    top: 85%;
+    left: 20%;
+  }
+  50% {
+    top: 50%;
+    left: 2%;
+  }
+  60% {
+    top: 85%;
+    left: 30%;
+  }
+  70% {
+    top: 12%;
+    left: 70%;
+  }
+  80% {
+    top: 85%;
+    left: 70%;
+  }
+  90% {
+    top: 12%;
+    left: 90%;
+  }
+  100% {
+    top: 100px;
+    left: 90%;
+  }
+}
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#galeria {
+  background-color: #ecf0f1;
+  padding: 20px;
+}
+
+.contenedor-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-imagenes {
+    grid-template-columns: 1fr;
+  }
+}
+.contenedor-imagenes img {
+  max-width: 100%;
+  height: 40em;
+  margin-bottom: 10px;
+}
+
+section:nth-child(3) {
+  background-color: #61a7af;
+  color: white;
+  padding: 20px;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: none;
+}
+
+footer {
+  background-color: #f2b077;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer p {
+  text-align: inherit;
+}/*# sourceMappingURL=estilos.css.map */
